@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/css/chat.css">
     <link rel="stylesheet" href="/js/app.js">
+    <link rel="stylesheet" href="/js/chat.js">
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
   </head>
   <body>
     <div class="top-bar">
@@ -35,7 +37,7 @@
     <div class="row">
       <div class="large-12 columns">
         <div class="callout">
-          <h3 class="animated infinite bounce">Welcome Rogongo Youth Online Messaging</h3>
+          <h3 class="animated infinite flash">Welcome Rogongo Youth Online Messaging</h3>
           <p>Welcome to our online free chat room and international chat room to find people without registration and instant interacting chat space network.</p>
           <p>We provide your fast and better internet online video chat room with audio and vidoe facility. Our chat rooms works with all platforms like Windows and Mac and more.</p>
         </div>
@@ -49,7 +51,7 @@
     <div class="row">
       <div class="large-6 columns"><form action="#" method="post">
         <div class="callout">
-          <h5 class="animated infinite bounce">LEAVE A MESSAGE FOR US.</h5>
+          <h5 class="animated infinite swing">LEAVE A MESSAGE FOR US.</h5>
             <fieldset class="register">
             <label>
             Name:
@@ -78,9 +80,8 @@
                 <div class="chatheader">
                   <h5 class="animated infinite bounce">JOIN OUR CHAT ROOM</h5>
                 </div>
-                <div class="chatmessages">
-                  <div class="chatbottom">
-                    <form class="chatform" action="#" method="post">
+
+                  <!--  <form class="chatform" action="#" method="post">
                       <label>Select Chatroom</label>
                       <select>
                         <label for="">room:</label>
@@ -89,16 +90,15 @@
                         <option value="single">Single</option>
                         <option value="complicated">Complicated</option>
                       </select>
-                      <input type="textarea" name="text" value="" placeholder="Type your message here">
-                      <textarea name="message" rows="10" cols="30">
-                      </textarea>
-                      <input name="usermsg" type="text" id="usermsg" size="63" />
-                      <input name="submitmsg" type="submit"  id="submitmsg" value="Send" /
-                      <input type="button" name="submit" value="Send">
-                        <input type="reset" name="name" value="cancel">
-                       </form>
-                  </div>
-            </div>
+                      </form>-->
+
+
+                      Field2: <input type="text" id="field2" value="" placeholder="your text here"><br>
+                      Field1: <input type="text" id="field1"><br><br>
+
+                      <button onclick="myFunction()">Copy Text</button>
+
+                      <p>A function is triggered when the button is clicked. The function copies the text from Field1 into Field2.</p>
 
             <!-- Simple pop-up dialog box, containing a form -->
       </div>
