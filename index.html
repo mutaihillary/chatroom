@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <link rel="stylesheet" href="/css/foundation.demo.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/chat.css">
+    <link rel="stylesheet" href="/js/app.js">
   </head>
-  <body>
+  <body class="banner">
     <div class="top-bar">
   <div class="top-bar-left">
     <ul class="dropdown menu" data-dropdown-menu>
       <li class="menu-text">Rogongo Youth</li>
       <li>
         <a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
+      <li><a href="chat.html">Chat</a></li>
       <li><a href="#">contact us</a></li>
     </ul>
   </div>
@@ -25,21 +30,32 @@
     </ul>
   </div>
 </div>
+
     <div class="row">
       <div class="large-12 columns">
         <h1>Welcome to our Chat room</h1>
+        <div id="page">
+                 <ul class="cb-slideshow">
+                    <li><span>Image 01</span><div><h3>Cute</h3></div></li>
+                    <li><span>Image 02</span><div><h3>Simba</h3></div></li>
+                    <li><span>Image 03</span><div><h3>Puppy</h3></div></li>
+                    <li><span>Image 04</span><div><h3>Giraffe</h3></div></li>
+                    <li><span>Image 05</span><div><h3>Horse</h3></div></li>
+                    <li><span>Image 06</span><div><h3>Cat</h3></div></li>
+                </ul>
+            </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="large-12 columns">
+      <div class="large-12 columns" class="test">
         <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
+          <h3 class="">We&rsquo;re stoked you want to try Foundation! </h3>
           <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
           <p>Once you've exhausted the fun in this document, you should check out:</p>
           <div class="row">
             <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+
             </div>
             <div class="large-4 medium-4 columns">
               <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
@@ -59,13 +75,13 @@
         </div>
       </div>
     </div>
-
+<!--
     <div class="row">
       <div class="large-8 medium-8 columns">
         <h5>Here&rsquo;s your basic grid:</h5>
         <!-- Grid Example -->
 
-        <div class="row">
+      <!--  <div class="row">
           <div class="large-12 columns">
             <div class="primary callout">
               <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
@@ -177,7 +193,7 @@
           <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation 5</title>
+
+  <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+
+  <script src="js/vendor/modernizr.js"></script>
+
+  <style type="text/css">
+	.full-size {
+		width: 100%;
+	}
+	.vertical-margin1 {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+  </style>
+
+</head>
+<body>
+	<div class="fixed">
+		<nav class="top-bar" data-topbar role="navigation">
+		  <ul class="title-area">
+			<li class="name">
+			  <h1><a href="#">Home</a></h1>
+			</li>
+			 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		  </ul>
+
+		  <section class="top-bar-section">
+
+			<!-- Left Nav Section -->
+			<ul class="left">
+			  <li><a href="#what">What?</a></li>
+			  <li class="has-dropdown">
+				<a href="#why">Why?</a>
+				<ul class="dropdown">
+				  <li><a href="#why1">Why 1</a></li>
+				  <li><a href="#why2">Why 2</a></li>
+				  <li><a href="#why3">Why 3</a></li>
+				  <li><a href="#why4">Why 4</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#how">How?</a></li>
+			</ul>
+		  </section>
+		</nav>
+	</div>
+	<div class="row vertical-margin1" id="what">
+		<div class="large-6 columns">
+			<h4 class="regular" >What?</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue sem, hendrerit et elit et, luctus sollicitudin mauris. Proin quis luctus ex, vel maximus leo. Donec lobortis diam gravida ligula convallis, nec hendrerit ante feugiat. Vivamus et rhoncus elit. Nunc ac tristique mi, non vehicula nunc. Vivamus ac sodales nibh. Nulla volutpat mollis condimentum.</p>
+			<p>Donec sapien tortor, euismod eu lacinia vitae, posuere id libero. Pellentesque a lorem sed eros pharetra consequat. Aliquam et mauris velit. Quisque efficitur nisi libero, ac accumsan ipsum vulputate vel. </p>
+			</div>
+		  <div class="large-6 columns"><img src="http://i528.photobucket.com/albums/dd324/bdpopeye/China%20Today%202/3-2.jpg" class="full-size"></div>
+	</div>
+
+	<div class="row vertical-margin1">
+		<div class="panel clearfix radius callout">
+			<div class="large12 text-center">
+				<a href="#" class="button round">Download Now!</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" id="why">
+		  <div class="large-4 columns">
+			<h4 class="regular">Why?</h4>
+			<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam convallis, mi id eleifend tristique, tellus purus bibendum odio, non efficitur justo leo blandit leo. Nullam id tristique ipsum. Nullam sed imperdiet diam.  </p>
+			<p>Sed urna lorem, ultricies eu sem elementum, egestas pharetra massa. Maecenas pretium eu elit lobortis malesuada. Ut vestibulum vehicula metus, non mollis turpis gravida vel. Etiam id varius augue:</p>
+			<ul>
+				<li id="why1">Sed vulputate elit</li>
+				<li id="why2">In cursus dignissim nibh </li>
+				<li id="why3">Praesent vehicula</li>
+				<li id="why4">Nulla facilisi</li>
+			</ul>
+			</div>
+		  <div class="large-8 columns"><img src="http://i871.photobucket.com/albums/ab280/lloveslife/Photography/kite.jpg" class="full-size"></div>
+	</div>
+
+	<div class="row vertical-margin1">
+		<div class="panel clearfix radius">
+			<div class="large-10 columns large-centered">
+				Etiam at cursus eros, <strong>quis pulvinar enim</strong>. Vestibulum non dictum tellus. Nam <strong>vel placerat diam</strong>, nec porttitor metus. Fusce <strong>posuere et nisi</strong> ac commodo.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" id="how">
+		<div class="large-12 columns">
+			<form>
+			  <fieldset>
+				<legend>How?</legend>
+				<label>Name
+				  <input type="text" placeholder="Your Name">
+				</label>
+				<label>Email
+				  <input type="text" placeholder="Your Email">
+				</label>
+				<label>Phone
+				  <input type="text" placeholder="Your Phone">
+				</label>
+				<label>Would you like a reply?</label>
+				<input type="radio" name="reply" value="Yes" id="replyYes"><label for="replyYes">Yes</label>
+				<input type="radio" name="reply" value="No" id="replyNo"><label for="replyNo">No</label>
+				<label>Message</label>
+				<textarea placeholder="Your Message"></textarea>
+				<div class="right"><a role="button" aria-label="submit form" href="#" class="button radius">Send</a></div>
+			  </fieldset>
+			</form>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-6 columns">
+			Copyright &copy; 2014 My Landing Page
+		</div>
+		<div class="large-6 columns">
+		<dl class="sub-nav right">
+		  <dt>Social Media:</dt>
+		  <dd><a href="#">Facebook</a></dd>
+		  <dd><a href="#">Twitter</a></dd>
+		  <dd><a href="#">Instagram</a></dd>
+		</dl>
+		</div>
+	</div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
