@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/css/chat.css">
     <link rel="stylesheet" href="/js/app.js">
+    <link rel="stylesheet" href="/js/js-form-validation.js">
     <link rel="stylesheet" href="/js/chat.js">
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
   </head>
@@ -49,26 +50,24 @@
         <div class="callout">
 
     <div class="row">
-      <div class="large-6 columns"><form action="#" method="post">
+      <div class="large-6 columns">
+<form name="myForm" onsubmit="return formValidation()" method="post">
         <div class="callout">
           <h5 class="animated infinite swing">LEAVE A MESSAGE FOR US.</h5>
             <fieldset class="register">
-            <label>
-            Name:
-            <input type="text" name="Name" placeholder="Full Name Required" required></label>
-            <label>
-            Email Address:
-            <input type="email" name="Email Address" placeholder="@example.com" required>
-            </label>
-            <label>
-            Mobile Number:
-            <input type="tel" name="Phone Number" placeholder="+2547000000" required>
-            </label>
+
+            <label for="username">Name:</label>
+            <input type="text" name="username" size="50" placeholder="Full Name Required"/>
+            <label for="email">Email:</label>
+            <input type="text" name="email" size="50" placeholder="@example.com" />
+            <label for="email">Mobile Number:</label>
+            <input type="tel" name="phone number" size="13" placeholder=" e.g +2547000000" required="" />
             <label>
             Comment:
             <textarea name="comments"></textarea>
             </label>
-            <input class="button" type="submit" value="Send">
+            <input type="submit" name="submit" value="Submit" />
+
             </fieldset>
         </form>
       </div>
@@ -81,24 +80,15 @@
                   <h5 class="animated infinite bounce">JOIN OUR CHAT ROOM</h5>
                 </div>
 
-                  <!--  <form class="chatform" action="#" method="post">
-                      <label>Select Chatroom</label>
-                      <select>
-                        <label for="">room:</label>
-                        <option value="hooked">Hooked up</option>
-                        <option value="gigs">Gigs</option>
-                        <option value="single">Single</option>
-                        <option value="complicated">Complicated</option>
-                      </select>
-                      </form>-->
+                      Field2: <input type="text" id="field2" value="test" placeholder="your text here"><br>
 
+                      <button onclick="myFunction()">Send</button><br><br><br>
 
-                      Field2: <input type="text" id="field2" value="" placeholder="your text here"><br>
                       Field1: <input type="text" id="field1"><br><br>
 
-                      <button onclick="myFunction()">Copy Text</button>
 
-                      <p>A function is triggered when the button is clicked. The function copies the text from Field1 into Field2.</p>
+
+                      <p>Chat whenever your friend is online. Join a group for chatroom</p>
 
             <!-- Simple pop-up dialog box, containing a form -->
       </div>
@@ -113,5 +103,6 @@
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/app.js"></script>
+      <script src="js/js-form-validation.js"></script>
   </body>
 </html>

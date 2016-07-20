@@ -15,3 +15,4 @@ function addtext() {
 	document.myform.outputtext.value += newtext;
 }
 </script>
+<!--form validations-->
